@@ -11,6 +11,9 @@ public class Gun : MonoBehaviour
     // 生成するオブジェクト
     [SerializeField] private GameObject ball;
 
+    // マガジンの座標
+    [SerializeField] private GameObject magazinePoint;
+
 
     public int magazine = 5;
     public Text TextFrame;
@@ -19,8 +22,10 @@ public class Gun : MonoBehaviour
     bool flag = true;
     private void Update()
     {
+        Vector3 magazinePointPos = magazinePoint.transform.position;
+        float dis = Vector3.Distance(magazinePointPos, this.transform.position);
         // 指定したボタンが押されたら
-        if (OVRInput.GetDown(inputBtn) && magazine > 0)
+        if (OVRInput.GetDown(inputBtn) && magazine > 0 && dis < 0.3)
         {
             magazine = magazine - 1;
             // ballをcontrolPointの位置と角度に合わせて生成する

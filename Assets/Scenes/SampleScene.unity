@@ -713,6 +713,7 @@ MonoBehaviour:
   controlPoint: {fileID: 1828601335}
   inputBtn: 67108864
   ball: {fileID: 5787202764613200057, guid: b81f28bf97c1055419cfa25345bdc033, type: 3}
+  magazinePoint: {fileID: 2146702002}
   magazine: 5
   TextFrame: {fileID: 942688712}
 --- !u!1001 &832284192
@@ -1149,7 +1150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e756f1b9242a4df44b8b11e2dac9a727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  span: 5
+  span: 3
   enemy: {fileID: 8836838068599320848, guid: 50d9fecc40c1eb24ba6127d4d3ed70a5, type: 3}
 --- !u!4 &1535075450
 Transform:
@@ -1373,6 +1374,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunPoint: {fileID: 1828601335}
   inputBtn: 536870912
+--- !u!1 &2146702002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1983321904398200, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 1853234317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
