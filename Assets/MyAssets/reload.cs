@@ -13,7 +13,7 @@ public class Reload : MonoBehaviour
         Vector3 gunPointPos = gunPoint.transform.position;
         float dis = Vector3.Distance(gunPointPos, this.transform.position);
         // 指定したボタンが押されたら
-        if (OVRInput.GetDown(inputBtn) && dis > 0.7)
+        if (OVRInput.GetDown(inputBtn) && dis > 0.4)
         {
             Gun gun; //呼ぶスクリプトにあだなつける
             GameObject obj = GameObject.Find("OVRRuntimeControllerPrefabR");
